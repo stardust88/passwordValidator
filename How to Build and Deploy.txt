@@ -1,0 +1,18 @@
+*** Password Validator Deploy and use guide****
+
+
+1. run Maven Install in the root directory of the project.
+2. include password validator jar from target folder in your project
+3. include log4j in your project.
+4. create validator instance with :
+		PasswordValidator validator = new DefaultPasswordValidator();
+		
+5. call validator.validate method and pass password string to it.
+
+6. get ValidatorResult object. check to see if validation has been success.
+ 
+7. New custom rules can be added by creating Rules object and submitting it to
+   validator.
+   
+   
+   
